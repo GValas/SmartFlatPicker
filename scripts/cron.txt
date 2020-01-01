@@ -1,0 +1,6 @@
+##################
+# ROOT
+##################
+
+@reboot     /home/gege/Development/SmartFlatPicker/production/start-mongodb.sh 2>&1 |logger  # sends error to syslog
+0 */1 * * * python3 /home/gege/Production/SmartFlatPicker/SeLogerComScrapper.py
